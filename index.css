@@ -1,0 +1,23 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 550px;
+    height: 81px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 24 23 23 18;
+    align-items: center;
+}
+
+.logo{
+    height: 2.6rem;
+}
+
+.icon{
+    height: 2rem;
+}
