@@ -5,33 +5,21 @@ import { dogs } from "./data.js"
 
 
 
+
+document.querySelector("#cross-btn").addEventListener("click", getDogHtml())
+function getDogHtml() {
+  let i = 0;
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function getDogHtml(){
-document.getElementById("body").innerHTML = `
-<section style="background-image: url(${avatar})">
-      <div>${name}, <span>${age}</span></div>
-      <div id="bio">${bio}</div>
+      document.querySelector("#body").innerHTML = `
+    <section style="background-image: url(${dogs[i].avatar})">
+      <div>${dogs[i].name}, <span>${dogs[i].age}</span></div>
+      <div id="bio">${dogs[i].bio}</div>
     </section>
     <div class="bttm-icons">
-      <img src="images/icon-cross.png" alt="icon cross" />
-      <img src="images/icon-heart.png" alt="icon heart" />
+      <img id="cross-btn" src="images/icon-cross.png" alt="icon cross" />
+      <img id="hearth-btn" src="images/icon-heart.png" alt="icon heart" />
     </div>
-`
-}
+    
+`}
 
-getDogHtml()
+  getDogHtml()
