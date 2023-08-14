@@ -6,3 +6,4 @@ Quick start:
 $ npm install
 $ npm start
 ````
+This app is tinder for dogs. Dogs can accept or reject other dogs for dating :)
